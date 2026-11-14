@@ -8,11 +8,11 @@ package org.cfeclipse.cfml.preferences;
 
 
 import org.cfeclipse.cfml.CFMLPlugin;
+import org.cfeclipse.cfml.editors.formatters.FormattingPreferences;
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.ui.texteditor.AbstractDecoratedTextEditorPreferenceConstants;
 import org.eclipse.ui.texteditor.AbstractTextEditor;
 
-import cfml.formatting.preferences.FormatterPreferences;
 
 /**
  * @author Stephen Milligan
@@ -208,7 +208,7 @@ public class EditorPreferenceConstants extends AbstractPreferenceConstants {
 	 * 
 	 */
 	public static void setDefaults(IPreferenceStore store) {
-		FormatterPreferences fPrefs = new FormatterPreferences();
+		FormattingPreferences fPrefs = new FormattingPreferences();
 
 		store.setDefault(P_INSIGHT_DELAY,500);
 		store.setDefault(P_INSERT_SPACES_FOR_TABS,false);

@@ -1,7 +1,7 @@
 package org.cfeclipse.cfml.frameworks.actions;
 
 import org.cfeclipse.cfml.frameworks.views.TreeNode;
-import org.cfeclipse.cfml.views.snips.SnipSmartDialog;
+import org.cfeclipse.cfml.snippets.views.snips.SnipSmartDialog;
 import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.text.BadLocationException;

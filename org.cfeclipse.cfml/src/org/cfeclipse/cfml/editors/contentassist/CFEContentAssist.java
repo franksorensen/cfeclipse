@@ -38,6 +38,7 @@ import org.cfeclipse.cfml.dictionary.Tag;
 import org.cfeclipse.cfml.dictionary.Value;
 import org.cfeclipse.cfml.preferences.AutoIndentPreferenceConstants;
 import org.cfeclipse.cfml.util.CFPluginImages;
+import org.eclipse.core.runtime.Assert;
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.jface.text.IDocument;
@@ -48,7 +49,6 @@ import org.eclipse.jface.text.contentassist.CompletionProposal;
 import org.eclipse.jface.text.contentassist.ICompletionProposal;
 import org.eclipse.jface.text.contentassist.IContextInformation;
 import org.eclipse.jface.text.contentassist.IContextInformationValidator;
-import org.eclipse.jface.util.Assert;
 import org.eclipse.jface.viewers.ISelection;
 
 

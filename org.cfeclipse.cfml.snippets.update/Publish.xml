@@ -18,12 +18,8 @@
 
 	<target name="cleanup">
 		<delete>
-			<fileset dir="${basedir}/plugins">
-				<exclude name="org.cfeclipse.cfml.docshare*.jar" />
-			</fileset>
-			<fileset dir="${basedir}/features">
-				<exclude name="org.cfeclipse.cfml.docshare*.jar" />
-			</fileset>
+			<fileset dir="${basedir}/plugins"></fileset>
+			<fileset dir="${basedir}/features"></fileset>
 			<fileset dir="${basedir}/">
 				<include name="*.jar" />
 				<include name="*.zip" />

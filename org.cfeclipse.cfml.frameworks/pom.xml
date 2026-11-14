@@ -6,9 +6,17 @@
     <groupId>org.cfeclipse.ide</groupId>
     <artifactId>cfeclipse</artifactId>
     <version>1.5.3</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>
   <groupId>org.cfeclipse.ide</groupId>
   <artifactId>org.cfeclipse.cfml.frameworks</artifactId>
   <version>1.0.3.4</version>
   <packaging>eclipse-plugin</packaging>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.cfeclipse.ide</groupId>
+  		<artifactId>org.cfeclipse.cfml.snippets</artifactId>
+  		<version>1.0.0.3</version>
+  	</dependency>
+  </dependencies>
 </project>

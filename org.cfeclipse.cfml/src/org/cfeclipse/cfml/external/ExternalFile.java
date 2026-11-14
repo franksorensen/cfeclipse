@@ -83,9 +83,7 @@ public class ExternalFile extends File {
 			workspace.prepareOperation(rule, null);
 			checkAccessible(getFlags(getResourceInfo(false, false)));
 			workspace.beginOperation(true);
-			MarkerInfo info = new MarkerInfo();
-			info.setType(type);
-			info.setCreationTime(System.currentTimeMillis());
+			MarkerInfo info = new MarkerInfo(type, System.currentTimeMillis());
 			workspace.getMarkerManager().add(this, info);
 			return new ExternalMarker();
 			//return new ExternalMarker(this, info.getId());

@@ -42,6 +42,7 @@ import org.eclipse.jface.text.IRewriteTarget;
 import org.eclipse.jface.text.ITextSelection;
 import org.eclipse.jface.text.TextSelection;
 import org.eclipse.jface.text.source.projection.ProjectionViewer;
+import org.eclipse.jface.util.LocalSelectionTransfer;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.TreeSelection;
 import org.eclipse.swt.custom.StyledText;
@@ -60,7 +61,6 @@ import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.ResourceTransfer;
 import org.eclipse.ui.texteditor.AbstractTextEditor;
 import org.eclipse.ui.texteditor.ITextEditor;
-import org.eclipse.ui.views.navigator.LocalSelectionTransfer;
 import org.eclipse.swt.dnd.DropTargetAdapter;
 /**
  * @author Stephen Milligan
@@ -108,7 +108,7 @@ public class CFEDragDropListener implements DragSourceListener, DropTargetListen
     final TextTransfer textTransfer = TextTransfer.getInstance();
     final EditorInputTransfer editorTransfer = EditorInputTransfer.getInstance();
     final ResourceTransfer resourceTransfer = ResourceTransfer.getInstance();
-    final LocalSelectionTransfer localSelectionTransfer = LocalSelectionTransfer.getInstance();
+    final LocalSelectionTransfer localSelectionTransfer = LocalSelectionTransfer.getTransfer();
     
     /**
      * This indidates whether or not the drag is internal.

@@ -24,8 +24,8 @@
  */
 package org.cfeclipse.cfml.preferences;
 
+import org.eclipse.core.runtime.Assert;
 import org.eclipse.core.runtime.IStatus;
-import org.eclipse.jface.util.Assert;
 
 class StatusInfo
 	implements IStatus

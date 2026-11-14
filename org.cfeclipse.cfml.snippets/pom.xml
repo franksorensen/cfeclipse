@@ -6,6 +6,7 @@
     <groupId>org.cfeclipse.ide</groupId>
     <artifactId>cfeclipse</artifactId>
     <version>1.5.3</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>
   <groupId>org.cfeclipse.ide</groupId>
   <artifactId>org.cfeclipse.cfml.snippets</artifactId>

@@ -6,28 +6,28 @@
 	<groupId>org.cfeclipse.ide</groupId>
 	<artifactId>cfeclipse</artifactId>
 	<version>1.5.3</version>
+	<name>CFEclipse Build Parent</name>
 	<packaging>pom</packaging>
 
 	<properties>
+	    <tycho.version>5.0.4</tycho.version>
+	    <tycho-extras.version>5.0.4</tycho-extras.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<tycho.version>1.1.0</tycho.version>
-		<tycho-extras.version>1.1.0</tycho-extras.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<mars-repo.url>http://download.eclipse.org/releases/mars</mars-repo.url>
-		<photon-repo.url>http://download.eclipse.org/releases/photon/</photon-repo.url>
+		<repository.id>eclipse-2026-09</repository.id>
+		<repository.url>https://download.eclipse.org/releases/2026-09/</repository.url>
 		<cfparser-repo.url>http://cfeclipse.org/cfparser/update</cfparser-repo.url>
 		<cfparser-dev-repo.url>http://cfeclipse.org/cfparser/update-dev</cfparser-dev-repo.url>
 		<cflint-repo.url>http://cfeclipse.org/cflint/update</cflint-repo.url>
 		<cflint-dev-repo.url>http://cfeclipse.org/cflint/update-dev</cflint-dev-repo.url>
-		<ecf-repo.url>http://download.eclipse.org/rt/ecf/3.11.0/site.p2</ecf-repo.url>
-		<mylyn-repo.url>http://download.eclipse.org/mylyn/releases/latest</mylyn-repo.url>
+		<ecf-repo.url>https://download.eclipse.org/rt/ecf/3.16.8/site.p2</ecf-repo.url>
+		<mylyn-repo.url>http://download.eclipse.org/mylyn/releases/latest</mylyn-repo.url>		
 	</properties>
 
 	<repositories>
 		<repository>
-			<id>photon</id>
-			<url>${photon-repo.url}</url>
+			<id>${repository.id}</id>
 			<layout>p2</layout>
+			<url>${repository.url}</url>
 		</repository>
 		<repository>
 			<id>cfparser</id>
@@ -107,7 +107,16 @@
 					<artifactId>tycho-versions-plugin</artifactId>
 					<version>${tycho.version}</version>
 				</plugin>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.18.0</version>
+					<configuration>
+						<release>21</release>
+					</configuration>
+				</plugin>
+				
 			</plugins>
+			
 		</pluginManagement>
 		
 		<plugins>
@@ -117,22 +126,27 @@
 				<version>${tycho.version}</version>
 				<extensions>true</extensions>
 			</plugin>
-
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho.version}</version>
 				<configuration>
+					<pomDependencies>consider</pomDependencies>
 					<environments>
 						<environment>
 							<os>linux</os>
 							<ws>gtk</ws>
-							<arch>x86</arch>
+							<arch>x86_64</arch>
 						</environment>
 						<environment>
 							<os>linux</os>
 							<ws>gtk</ws>
-							<arch>x86_64</arch>
+							<arch>aarch64</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>aarch64</arch>
 						</environment>
 						<environment>
 							<os>win32</os>
@@ -159,9 +173,9 @@
 				<version>${tycho.version}</version>
 				<dependencies>
 					<dependency>
-						<groupId>org.eclipse.tycho.extras</groupId>
+						<groupId>org.eclipse.tycho</groupId>
 						<artifactId>tycho-buildtimestamp-jgit</artifactId>
-						<version>${tycho-extras.version}</version>
+						<version>${tycho.version}</version>
 					</dependency>
 				</dependencies>
 				<configuration>

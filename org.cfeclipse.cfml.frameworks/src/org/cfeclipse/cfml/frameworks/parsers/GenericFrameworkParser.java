@@ -13,7 +13,6 @@ import org.apache.commons.logging.LogFactory;
 import org.cfeclipse.cfml.frameworks.ConfigLoader;
 import org.cfeclipse.cfml.frameworks.views.FrameworkFile;
 import org.cfeclipse.cfml.frameworks.views.TreeParentNode;
-import org.cfeclipse.cfml.util.CFMappings;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IMarker;
@@ -50,8 +49,6 @@ public class GenericFrameworkParser  {
 	private FrameworkFile fwfile;
 	private TreeParentNode parentnode;
 	
-	//Mappings assigned to this project (to figure out paths)
-	private CFMappings projectMappings;
 	private HashMap<String, Long> problemMarkerMap = new HashMap<String, Long>();
 	
 	private Log logger = LogFactory.getLog(GenericFrameworkParser.class);

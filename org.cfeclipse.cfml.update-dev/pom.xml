@@ -7,6 +7,7 @@
 		<groupId>org.cfeclipse.ide</groupId>
 		<artifactId>cfeclipse</artifactId>
 		<version>1.5.3</version>
+	    <relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>org.cfeclipse.cfml.update-dev</artifactId>
 	<version>1.5.3</version>

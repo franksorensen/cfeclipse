@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.StringReader;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.cfeclipse.cfml.views.snips.SnipSmartDialog;
+import org.cfeclipse.cfml.snippets.views.snips.SnipSmartDialog;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.jface.action.IAction;
 import org.eclipse.swt.widgets.Shell;

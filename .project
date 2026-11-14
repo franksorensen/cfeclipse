@@ -3,6 +3,8 @@
 	<name>cfeclipse</name>
 	<comment></comment>
 	<projects>
+		<project>cflint-eclipse</project>
+		<project>cfparser-eclipse</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
