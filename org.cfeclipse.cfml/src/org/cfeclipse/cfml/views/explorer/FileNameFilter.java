@@ -8,9 +8,9 @@ package org.cfeclipse.cfml.views.explorer;
 
 import java.io.File;
 import java.io.FileFilter;
-import org.apache.commons.vfs.FileObject;
-import org.apache.commons.vfs.FileSystemException;
-import org.apache.commons.vfs.FileType;
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.FileSystemException;
+import org.apache.commons.vfs2.FileType;
 
 /**
  * @author Stephen Milligan

@@ -14,18 +14,17 @@ import java.net.URISyntaxException;
 import java.util.Arrays;
 import java.util.Properties;
 
-import org.apache.commons.vfs.FileName;
-import org.apache.commons.vfs.FileSystemException;
-import org.apache.commons.vfs.FileSystemOptions;
-import org.apache.commons.vfs.auth.StaticUserAuthenticator;
-import org.apache.commons.vfs.impl.DefaultFileSystemConfigBuilder;
-import org.apache.commons.vfs.provider.ftp.FtpFileSystemConfigBuilder;
-import org.apache.commons.vfs.provider.sftp.SftpFileSystemConfigBuilder;
+import org.apache.commons.vfs2.FileName;
+import org.apache.commons.vfs2.FileSystemException;
+import org.apache.commons.vfs2.FileSystemOptions;
+import org.apache.commons.vfs2.auth.StaticUserAuthenticator;
+import org.apache.commons.vfs2.impl.DefaultFileSystemConfigBuilder;
+import org.apache.commons.vfs2.provider.ftp.FtpFileSystemConfigBuilder;
+import org.apache.commons.vfs2.provider.sftp.SftpFileSystemConfigBuilder;
 import org.cfeclipse.cfml.CFMLPlugin;
 import org.cfeclipse.cfml.net.ftp.PublicKeyAuthUserInfo;
 import org.cfeclipse.cfml.util.AlertUtils;
 
-import com.jcraft.jsch.UserInfo;
 
 
 /**
@@ -119,7 +118,7 @@ public class FTPConnectionProperties {
 	    	StaticUserAuthenticator auth = new StaticUserAuthenticator(connectionId, getUsername(), getPassword());
 	    	try {
 	    		DefaultFileSystemConfigBuilder.getInstance().setUserAuthenticator(fileSystemOptions, auth);
-	    	} catch (FileSystemException e2) {
+	    	} catch (Exception e2) {
 	    		// TODO Auto-generated catch block
 	    		e2.printStackTrace();
 	    	}

@@ -1,4 +1,4 @@
-package org.cfeclipse.cfml.views.explorer.vfs.view.menus;
+package org.cfeclipse.cfml.views.explorer.vfs2.view.menus;
 
 import java.io.File;
 import java.net.URLDecoder;
@@ -9,7 +9,6 @@ import org.eclipse.core.runtime.IConfigurationElement;
 import org.eclipse.core.runtime.IExtension;
 import org.eclipse.core.runtime.IExtensionPoint;
 import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.jface.action.Action;
 import org.eclipse.jface.preference.PreferenceDialog;
@@ -17,17 +16,16 @@ import org.eclipse.jface.resource.ImageRegistry;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.MessageBox;
-import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.TreeItem;
 import org.eclipse.ui.dialogs.PreferencesUtil;
 
-import org.apache.commons.vfs.FileObject;
-import org.apache.commons.vfs.FileSystemException;
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.FileSystemException;
 import org.cfeclipse.cfml.net.FTPConnectionProperties;
 import org.cfeclipse.cfml.preferences.FtpConnectionDialog;
 import org.cfeclipse.cfml.util.CFPluginImages;
-import org.cfeclipse.cfml.views.explorer.vfs.view.VFSUtil;
-import org.cfeclipse.cfml.views.explorer.vfs.view.VFSView;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.VFSUtil;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.VFSView;
 
 public class FileMenu {
 

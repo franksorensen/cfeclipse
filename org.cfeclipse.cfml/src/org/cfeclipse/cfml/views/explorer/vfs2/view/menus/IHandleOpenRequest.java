@@ -1,4 +1,4 @@
-package org.cfeclipse.cfml.views.explorer.vfs.view.menus;
+package org.cfeclipse.cfml.views.explorer.vfs2.view.menus;
 
 /**
  * Handles a file open request that has been received from an external client.

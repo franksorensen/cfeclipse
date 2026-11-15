@@ -41,7 +41,6 @@ import org.cfeclipse.cfml.editors.actions.InsertGetAndSetAction;
 import org.cfeclipse.cfml.editors.actions.JumpToDocPos;
 import org.cfeclipse.cfml.editors.actions.JumpToMatchingTagAction;
 import org.cfeclipse.cfml.editors.actions.LocateInFileSystemAction;
-import org.cfeclipse.cfml.editors.actions.LocateInTreeAction;
 import org.cfeclipse.cfml.editors.actions.RTrimAction;
 import org.cfeclipse.cfml.editors.breadcrumb.IBreadcrumb;
 import org.cfeclipse.cfml.editors.codefolding.CodeFoldingSetter;
@@ -96,6 +95,7 @@ import org.eclipse.jface.text.source.projection.IProjectionListener;
 import org.eclipse.jface.text.source.projection.ProjectionSupport;
 import org.eclipse.jface.text.source.projection.ProjectionViewer;
 import org.eclipse.jface.util.IPropertyChangeListener;
+import org.eclipse.jface.util.LocalSelectionTransfer;
 import org.eclipse.jface.util.PropertyChangeEvent;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.window.Window;
@@ -136,7 +136,6 @@ import org.eclipse.ui.texteditor.ITextEditor;
 import org.eclipse.ui.texteditor.MarkerAnnotationPreferences;
 import org.eclipse.ui.texteditor.SourceViewerDecorationSupport;
 import org.eclipse.ui.texteditor.TextOperationAction;
-import org.eclipse.ui.views.navigator.LocalSelectionTransfer;
 import org.cfeclipse.cfml.editors.codefolding.CodeFoldingResourceChangeReporter;
 
 /**
@@ -880,17 +879,17 @@ IReconcilingParticipant, IProjectionListener, IPropertyChangeListener, IShowInSo
 						action.run(null);
 					}
 				};
-					menu.add(act);
+				menu.add(act);
 					
-					
+				/*
 				act = new Action("Show in Navigator", null){
 					public void run(){
 						LocateInTreeAction action = new LocateInTreeAction();
 						action.run(null);
 					}
 				};
-					menu.add(act);
-				
+				menu.add(act);
+				*/
 				
 			}
 			

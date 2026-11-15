@@ -8,7 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.cfeclipse.cfml.views.explorer.vfs.view;
+package org.cfeclipse.cfml.views.explorer.vfs2.view;
 
 import org.eclipse.core.filesystem.EFS;
 import org.eclipse.core.filesystem.IFileStore;
@@ -47,17 +47,17 @@ import java.net.URISyntaxException;
 import java.text.*;
 import java.util.*;
 
-import org.apache.commons.vfs.FileName;
-import org.apache.commons.vfs.FileObject;
-import org.apache.commons.vfs.FileSystemException;
-import org.apache.commons.vfs.FileSystemManager;
-import org.apache.commons.vfs.FileSystemOptions;
-import org.apache.commons.vfs.VFS;
-import org.apache.commons.vfs.auth.StaticUserAuthenticator;
-import org.apache.commons.vfs.impl.DefaultFileSystemConfigBuilder;
-import org.apache.commons.vfs.provider.ftp.FtpFileSystemConfigBuilder;
-import org.apache.commons.vfs.provider.sftp.SftpFileSystemConfigBuilder;
-import org.apache.commons.vfs.util.Os;
+import org.apache.commons.vfs2.FileName;
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.FileSystemException;
+import org.apache.commons.vfs2.FileSystemManager;
+import org.apache.commons.vfs2.FileSystemOptions;
+import org.apache.commons.vfs2.VFS;
+import org.apache.commons.vfs2.auth.StaticUserAuthenticator;
+import org.apache.commons.vfs2.impl.DefaultFileSystemConfigBuilder;
+import org.apache.commons.vfs2.provider.ftp.FtpFileSystemConfigBuilder;
+import org.apache.commons.vfs2.provider.sftp.SftpFileSystemConfigBuilder;
+import org.apache.commons.vfs2.util.Os;
 
 import org.cfeclipse.cfml.editors.CFJavaFileEditorInput;
 import org.cfeclipse.cfml.editors.CFMLEditor;
@@ -69,15 +69,15 @@ import org.cfeclipse.cfml.net.RemoteFileEditorInput;
 import org.cfeclipse.cfml.preferences.FtpConnectionDialog;
 import org.cfeclipse.cfml.util.CFPluginImages;
 import org.cfeclipse.cfml.views.explorer.FileExplorerView;
-import org.cfeclipse.cfml.views.explorer.vfs.FileOperation;
-import org.cfeclipse.cfml.views.explorer.vfs.view.menus.EditMenu;
-import org.cfeclipse.cfml.views.explorer.vfs.view.menus.FileMenu;
-import org.cfeclipse.cfml.views.explorer.vfs.view.menus.EditMenu.CopyAction;
-import org.cfeclipse.cfml.views.explorer.vfs.view.menus.EditMenu.PasteAction;
-import org.cfeclipse.cfml.views.explorer.vfs.view.menus.FileMenu.ConnectionAction;
-import org.cfeclipse.cfml.views.explorer.vfs.view.menus.FileMenu.DeleteAction;
-import org.cfeclipse.cfml.views.explorer.vfs.view.menus.FileMenu.NewFileAction;
-import org.cfeclipse.cfml.views.explorer.vfs.view.menus.FileMenu.NewFolderAction;
+import org.cfeclipse.cfml.views.explorer.vfs2.FileOperation;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.menus.EditMenu;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.menus.FileMenu;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.menus.EditMenu.CopyAction;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.menus.EditMenu.PasteAction;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.menus.FileMenu.ConnectionAction;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.menus.FileMenu.DeleteAction;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.menus.FileMenu.NewFileAction;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.menus.FileMenu.NewFolderAction;
 
 
 /**

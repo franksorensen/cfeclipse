@@ -6,7 +6,7 @@
  */
 package org.cfeclipse.cfml.views.explorer;
 
-import org.apache.commons.vfs.FileObject;
+import org.apache.commons.vfs2.FileObject;
 
 /**
  * @author Stephen Milligan

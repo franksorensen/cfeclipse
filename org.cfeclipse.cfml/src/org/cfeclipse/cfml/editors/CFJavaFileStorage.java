@@ -6,12 +6,12 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 
 import org.eclipse.core.resources.IStorage;
+import org.eclipse.core.runtime.Assert;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Path;
 import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.text.Assert;
 
 public class CFJavaFileStorage implements IStorage {
 

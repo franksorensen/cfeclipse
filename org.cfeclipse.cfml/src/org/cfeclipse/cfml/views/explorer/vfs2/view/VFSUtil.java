@@ -1,4 +1,4 @@
-package org.cfeclipse.cfml.views.explorer.vfs.view;
+package org.cfeclipse.cfml.views.explorer.vfs2.view;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,12 +15,12 @@ import java.util.TreeMap;
 import java.util.List;
 import java.util.Vector;
 
-import org.apache.commons.vfs.FileContent;
-import org.apache.commons.vfs.FileName;
-import org.apache.commons.vfs.FileObject;
-import org.apache.commons.vfs.FileSystemException;
-import org.apache.commons.vfs.FileSystemManager;
-import org.apache.commons.vfs.FileType;
+import org.apache.commons.vfs2.FileContent;
+import org.apache.commons.vfs2.FileName;
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.FileSystemException;
+import org.apache.commons.vfs2.FileSystemManager;
+import org.apache.commons.vfs2.FileType;
 import org.eclipse.jface.dialogs.IInputValidator;
 import org.eclipse.jface.dialogs.InputDialog;
 import org.eclipse.jface.dialogs.MessageDialog;
@@ -36,7 +36,7 @@ import org.eclipse.swt.widgets.TreeItem;
 import org.cfeclipse.cfml.net.FTPConnectionProperties;
 import org.cfeclipse.cfml.net.ftp.FTPConnection;
 import org.cfeclipse.cfml.util.CFPluginImages;
-import org.cfeclipse.cfml.views.explorer.vfs.FileOperation;
+import org.cfeclipse.cfml.views.explorer.vfs2.FileOperation;
 
 public class VFSUtil 
 {

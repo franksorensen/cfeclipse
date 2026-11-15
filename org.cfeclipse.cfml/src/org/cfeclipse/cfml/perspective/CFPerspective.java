@@ -27,7 +27,7 @@ package org.cfeclipse.cfml.perspective;
 import org.cfeclipse.cfml.views.browser.BrowserView;
 import org.cfeclipse.cfml.views.cfcmethods.CFCMethodsView;
 import org.cfeclipse.cfml.views.dictionary.DictionaryView;
-import org.cfeclipse.cfml.views.explorer.vfs.view.VFSView;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.VFSView;
 import org.cfeclipse.cfml.views.images.ImagesView;
 import org.cfeclipse.cfml.views.packageview.PackageView;
 import org.cfeclipse.cfml.views.snips.SnipTreeView;
@@ -55,14 +55,14 @@ public class CFPerspective implements IPerspectiveFactory {
 		layout.addActionSet("org.eclipse.debug.ui.launchActionSet");
 		layout.addActionSet("org.eclipse.debug.ui.breakpointActionSet");
 		
-		layout.addShowInPart(IPageLayout.ID_RES_NAV);
+		layout.addShowInPart(IPageLayout.ID_NAVIGATE_ACTION_SET);
 		
 		//view to the left of the editor
 		IFolderLayout left = layout.createFolder(
 			"left", IPageLayout.LEFT, (float)0.25, editorid
 		);
 		//standard resource nav (file / project lister)
-		left.addView(IPageLayout.ID_RES_NAV);
+		left.addView(IPageLayout.ID_NAVIGATE_ACTION_SET);
 		left.addView(SnipTreeView.ID_SNIPVIEWTREE);
 		left.addView(VFSView.ID_FILEEXPLORER);
 		// old file explorer we can keep for a bit but hide it

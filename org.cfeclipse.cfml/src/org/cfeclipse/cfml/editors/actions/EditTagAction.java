@@ -30,7 +30,6 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
 import org.cfeclipse.cfml.dialogs.TagEditDialog;
 import org.cfeclipse.cfml.dictionary.DictionaryManager;
 import org.cfeclipse.cfml.dictionary.SyntaxDictionary;
@@ -70,7 +69,6 @@ public class EditTagAction implements IWorkbenchWindowActionDelegate,IEditorActi
 		private Map selectedattributes;
 		private boolean replace = true;
 		private SyntaxDictionary dictionary;
-		private static final Logger logger = Logger.getLogger(EditTagAction.class);
 		/*
 		 * constructors
 		 */

@@ -21,6 +21,7 @@
 		<cflint-dev-repo.url>http://cfeclipse.org/cflint/update-dev</cflint-dev-repo.url>
 		<ecf-repo.url>https://download.eclipse.org/rt/ecf/3.16.8/site.p2</ecf-repo.url>
 		<mylyn-repo.url>http://download.eclipse.org/mylyn/releases/latest</mylyn-repo.url>		
+		<nabula-repo.url>https://download.eclipse.org/nebula/updates/milestone/latest</nabula-repo.url>
 	</properties>
 
 	<repositories>
@@ -57,6 +58,11 @@
 		<repository>
 			<id>mylyn</id>
 			<url>${mylyn-repo.url}</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>nebula</id>
+			<url>${nebula-repo.url}</url>
 			<layout>p2</layout>
 		</repository>
 	</repositories>
