@@ -15,6 +15,11 @@
   <dependencies>
   	<dependency>
   		<groupId>org.cfeclipse.ide</groupId>
+  		<artifactId>org.cfeclipse.cfml</artifactId>
+  		<version>1.0.0.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.cfeclipse.ide</groupId>
   		<artifactId>org.cfeclipse.cfml.snippets</artifactId>
   		<version>1.0.0.3</version>
   	</dependency>

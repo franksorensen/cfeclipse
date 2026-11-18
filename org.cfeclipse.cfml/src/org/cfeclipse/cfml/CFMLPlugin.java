@@ -29,7 +29,6 @@ import java.io.IOException;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-import org.apache.log4j.PropertyConfigurator;
 import org.cfeclipse.cfml.console.ConsoleUtil;
 import org.cfeclipse.cfml.dictionary.DictionaryManager;
 import org.cfeclipse.cfml.editors.actions.LastActionManager;
@@ -167,7 +166,6 @@ public class CFMLPlugin extends AbstractUIPlugin {
 		 * "/properties.ini" );
 		 */
 
-		PropertyConfigurator.configure(CFMLPlugin.getDefault().getBundle().getEntry("/lib/log4j.properties"));
 		this.propertyStore = new PreferenceStore(CFMLPlugin.getDefault().getStateLocation().toString()
 				+ "/properties.ini");
 

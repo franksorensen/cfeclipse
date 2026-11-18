@@ -8,7 +8,7 @@
 		<version>1.5.3</version>
 	</parent>
 	<artifactId>org.cfeclipse.cfml</artifactId>
-	<version>1.5.3</version>
+	<version>1.0.0.0</version>
 	<packaging>eclipse-plugin</packaging>
 
 	<dependencies>

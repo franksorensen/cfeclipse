@@ -1,6 +1,5 @@
 package org.cfeclipse.cfml.editors.partitioner.scanners.rules;
 
-//import org.eclipse.jface.text.Assert;
 import org.cfeclipse.cfml.editors.ColorManager;
 import org.cfeclipse.cfml.preferences.CFMLColorsPreferenceConstants;
 import org.cfeclipse.cfml.preferences.CFMLPreferenceManager;

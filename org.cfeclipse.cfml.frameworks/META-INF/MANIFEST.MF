@@ -3,6 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: CF Frameworks Plugin
 Bundle-SymbolicName: org.cfeclipse.cfml.frameworks;singleton:=true
 Bundle-Version: 1.0.3.4
+Import-Package: org.cfeclipse.cfml.mappings
 Bundle-ClassPath: lib/saxpath.jar,
  lib/jdom-contrib.jar,
  lib/jdom.jar,
@@ -17,7 +18,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.core.resources,
  org.eclipse.ui.editors,
  org.eclipse.ui.ide,
- org.cfeclipse.cfml,
  org.eclipse.jface.text,
  org.eclipse.ui.workbench.texteditor,
  org.eclipse.ui.workbench;bundle-version="[3.140.0,4.0.0)"
