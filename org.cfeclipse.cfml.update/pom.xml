@@ -15,7 +15,6 @@
 	<properties>
 		<site.suffix></site.suffix>
 		<merge.updates>false</merge.updates>
-		<jboss.tycho.tools.version>1.0.0</jboss.tycho.tools.version>
 		<update.site.description>Release Build</update.site.description>
 		<update.site.eclipsever>IDE 2019-09</update.site.eclipsever>
 		<update.site.github>http://github.com/cfeclipse/cfeclipse</update.site.github>
@@ -24,19 +23,11 @@
 		<update.site.version>${project.version}</update.site.version>
 	</properties>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>jboss</id>
-			<name>jboss</name>
-			<layout>default</layout>
-			<url>http://repository.jboss.org/nexus/content/repositories/releases</url>
-		</pluginRepository>
-	</pluginRepositories>
 
 	<repositories>
 		<repository>
-			<id>photon</id>
-			<url>${photon-repo.url}</url>
+			<id>${repository.id}</id>
+			<url>${repository.url}</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
@@ -73,9 +64,9 @@
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.eclipse.tycho.extras</groupId>
-						<artifactId>tycho-p2-extras-plugin</artifactId>
-						<version>${tycho-extras.version}</version>
+						<groupId>org.eclipse.tycho</groupId>
+						<artifactId>tycho-p2-repository-plugin</artifactId>
+						<version>${tycho.version}</version>
 						<executions>
 							<execution>
 								<id>add-to-update-site</id>
@@ -102,42 +93,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.jboss.tools.tycho-plugins</groupId>
-				<artifactId>repository-utils</artifactId>
-				<version>${jboss.tycho.tools.version}</version>
-				<executions>
-					<!-- creates index.html and other artifacts -->
-					<execution>
-						<id>generate-facade</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-repository-facade</goal>
-						</goals>
-						<configuration>
-							<!-- configuration options for the generated HTML page -->
-							<siteTemplateFolder>${project.basedir}</siteTemplateFolder>
-							<symbols>
-								<update.site.eclipsever>${update.site.eclipsever}</update.site.eclipsever>
-								<update.site.description>${update.site.description}</update.site.description>
-								<update.site.github>${update.site.github}</update.site.github>
-								<update.site.groupId>${project.groupId}</update.site.groupId>
-								<update.site.name>${update.site.name}</update.site.name>
-								<update.site.url>${update.site.url}</update.site.url>
-								<update.site.version>${update.site.version}</update.site.version>
-							</symbols>
-							<!-- <referenceStrategy>compositeReferences</referenceStrategy> -->
-							<!-- this adds repository references to the update site's content.xml -->
-							<associateSites>
-								<site>${mxunit-repo.url}</site>
-								<site>${cfparser-repo.url}</site>
-								<site>${cflint-repo.url}</site>
-								<site>${ecf-repo.url}</site>
-							</associateSites>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
 

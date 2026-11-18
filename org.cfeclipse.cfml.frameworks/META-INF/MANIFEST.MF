@@ -3,7 +3,6 @@ Bundle-ManifestVersion: 2
 Bundle-Name: CF Frameworks Plugin
 Bundle-SymbolicName: org.cfeclipse.cfml.frameworks;singleton:=true
 Bundle-Version: 1.0.3.4
-Import-Package: org.cfeclipse.cfml.mappings
 Bundle-ClassPath: lib/saxpath.jar,
  lib/jdom-contrib.jar,
  lib/jdom.jar,

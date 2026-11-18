@@ -170,14 +170,6 @@
 							<arch>x86_64</arch>
 						</environment>
 					</environments>
-					<locations>
-						<location path="${eclipse_home}" type="Profile"/>
-						<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-							<repository location="${nebula-repo.url}"/>
-							<unit id="org.eclipse.nebula.widgets.gallery.feature.feature.group" version="0.0.0"/>
-							<unit id="org.eclipse.nebula.widgets.pshelf.feature.feature.group" version="0.0.0"/>
-						</location>
-					</locations>
 				</configuration>
 			</plugin>
 
