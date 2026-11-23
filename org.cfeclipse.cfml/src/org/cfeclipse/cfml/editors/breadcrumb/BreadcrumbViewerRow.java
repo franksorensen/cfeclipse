@@ -1,14 +1,13 @@
 package org.cfeclipse.cfml.editors.breadcrumb;
 
+import org.eclipse.jface.viewers.TreePath;
+import org.eclipse.jface.viewers.ViewerRow;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Widget;
-
-import org.eclipse.jface.viewers.TreePath;
-import org.eclipse.jface.viewers.ViewerRow;
 
 
 /**

@@ -27,7 +27,6 @@ package org.cfeclipse.cfml.preferences;
 //import java.net.URL;
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 
 import org.cfeclipse.cflint.store.CFLintPreferenceConstants;
 import org.cfeclipse.cfml.CFMLPlugin;

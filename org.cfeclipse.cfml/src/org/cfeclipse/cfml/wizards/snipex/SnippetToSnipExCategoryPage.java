@@ -3,12 +3,12 @@
  */
 package org.cfeclipse.cfml.wizards.snipex;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Vector;
-
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.cfeclipse.cfml.views.snips.SnipTreeViewLabelProvider;
+import org.cfeclipse.snipex.Library;
+import org.cfeclipse.snipex.SnipEx;
 import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.ISelectionChangedListener;
 import org.eclipse.jface.viewers.ITreeSelection;
 import org.eclipse.jface.viewers.SelectionChangedEvent;
@@ -20,13 +20,6 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Tree;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.cfeclipse.cfml.views.snips.SnipTreeViewLabelProvider;
-import org.cfeclipse.cfml.wizards.snipex.SnippetToSnipExWizard;
-import org.cfeclipse.snipex.Library;
-import org.cfeclipse.snipex.SnipEx;
 
 /**
  * @author markdrew

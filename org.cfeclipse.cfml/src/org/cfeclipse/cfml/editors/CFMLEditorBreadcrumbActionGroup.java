@@ -1,18 +1,6 @@
 package org.cfeclipse.cfml.editors;
 
 import org.cfeclipse.cfml.editors.actions.CompositeActionGroup;
-import org.eclipse.core.commands.operations.IUndoContext;
-
-import org.eclipse.core.resources.ResourcesPlugin;
-
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.viewers.ISelectionProvider;
-
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IWorkbenchSite;
-import org.eclipse.ui.actions.ActionGroup;
-import org.eclipse.ui.operations.UndoRedoActionGroup;
 
 
 

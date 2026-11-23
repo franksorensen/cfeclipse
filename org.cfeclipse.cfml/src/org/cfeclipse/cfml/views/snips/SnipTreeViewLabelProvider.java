@@ -37,12 +37,12 @@ package org.cfeclipse.cfml.views.snips;
 import java.io.File;
 
 import org.cfeclipse.cfml.util.CFPluginImages;
+import org.cfeclipse.snipex.Library;
+import org.cfeclipse.snipex.SnipEx;
+import org.cfeclipse.snipex.Snippet;
 import org.eclipse.jface.viewers.ILabelProvider;
 import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.swt.graphics.Image;
-import org.cfeclipse.snipex.SnipEx;
-import org.cfeclipse.snipex.Library;
-import org.cfeclipse.snipex.Snippet;
 
 public class SnipTreeViewLabelProvider extends LabelProvider {
 	

@@ -1,9 +1,8 @@
 package org.cfeclipse.cfml.editors.breadcrumb;
 
+import org.eclipse.jface.viewers.ISelectionProvider;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-
-import org.eclipse.jface.viewers.ISelectionProvider;
 
 
 /**

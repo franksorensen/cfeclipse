@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import org.osgi.framework.Bundle;
-
-import org.eclipse.swt.SWT;
 import org.cfeclipse.cfml.CFMLPlugin;
 import org.cfeclipse.cfml.preferences.CFMLPreferenceConstants;
 import org.eclipse.core.runtime.Assert;
@@ -16,6 +13,8 @@ import org.eclipse.core.runtime.IExtensionRegistry;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.Status;
+import org.eclipse.swt.SWT;
+import org.osgi.framework.Bundle;
 
 
 /**

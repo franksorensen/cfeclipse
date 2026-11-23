@@ -3,14 +3,6 @@ package org.cfeclipse.cfml.editors.formatters;
 import java.util.LinkedList;
 import java.util.List;
 
-import net.htmlparser.jericho.Attribute;
-import net.htmlparser.jericho.Attributes;
-import net.htmlparser.jericho.Element;
-import net.htmlparser.jericho.OutputDocument;
-import net.htmlparser.jericho.Source;
-import net.htmlparser.jericho.StartTag;
-import net.htmlparser.jericho.Tag;
-
 import org.cfeclipse.cfml.editors.ICFDocument;
 import org.cfeclipse.cfml.editors.partitioner.scanners.CFPartitionScanner;
 import org.cfeclipse.cfml.properties.CFMLPropertyManager;
@@ -23,6 +15,13 @@ import org.eclipse.jface.text.formatter.IFormattingStrategyExtension;
 
 import cfml.formatting.Formatter;
 import cfml.formatting.preferences.FormatterPreferences;
+import net.htmlparser.jericho.Attribute;
+import net.htmlparser.jericho.Attributes;
+import net.htmlparser.jericho.Element;
+import net.htmlparser.jericho.OutputDocument;
+import net.htmlparser.jericho.Source;
+import net.htmlparser.jericho.StartTag;
+import net.htmlparser.jericho.Tag;
 
 public class CFMLFormattingStrategy extends ContextBasedFormattingStrategy implements IFormattingStrategyExtension {
 	private static final String lineSeparator = System.getProperty("line.separator");

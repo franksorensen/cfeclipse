@@ -25,7 +25,6 @@
 package org.cfeclipse.cfml.parser.docitems;
 
 import org.antlr.v4.runtime.ParserRuleContext;
-import org.antlr.v4.runtime.tree.ParseTree;
 
 public class ScriptItem extends DocItem 
 {

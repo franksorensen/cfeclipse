@@ -4,6 +4,9 @@ import org.apache.commons.vfs2.FileObject;
 import org.apache.commons.vfs2.FileSystemException;
 import org.apache.commons.vfs2.FileSystemManager;
 import org.apache.commons.vfs2.util.Os;
+import org.cfeclipse.cfml.util.CFPluginImages;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.VFSUtil;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.VFSView;
 import org.eclipse.jface.action.Action;
 import org.eclipse.jface.resource.ImageRegistry;
 import org.eclipse.swt.dnd.Clipboard;
@@ -12,10 +15,6 @@ import org.eclipse.swt.dnd.Transfer;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.TreeItem;
-
-import org.cfeclipse.cfml.util.CFPluginImages;
-import org.cfeclipse.cfml.views.explorer.vfs2.view.VFSUtil;
-import org.cfeclipse.cfml.views.explorer.vfs2.view.VFSView;
 
 public class EditMenu {
 	private static Clipboard clipboard;

@@ -2,12 +2,13 @@ package org.cfeclipse.cfml.editors.dnd.future;
 
 import java.util.Iterator;
 
-import org.eclipse.ui.part.PluginTransfer;
-import org.eclipse.ui.part.PluginTransferData;
-import org.eclipse.jface.viewers.*;
-import org.eclipse.swt.dnd.*;
+import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.jface.viewers.StructuredViewer;
+import org.eclipse.swt.dnd.DND;
 import org.eclipse.swt.dnd.DragSourceAdapter;
 import org.eclipse.swt.dnd.DragSourceEvent;
+import org.eclipse.swt.dnd.TextTransfer;
+import org.eclipse.ui.part.PluginTransfer;
 /**
  * Supports dragging gadgets from a structured viewer.
  */

@@ -7,14 +7,12 @@ package org.cfeclipse.cfml.wizards.templatefilewizard;
 
 import java.io.File;
 import java.io.FileFilter;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.cfeclipse.cfml.views.snips.SnipTreeViewContentProvider;
-import org.cfeclipse.snipex.SnipEx;
 import org.cfeclipse.snipex.Library;
+import org.cfeclipse.snipex.SnipEx;
 import org.cfeclipse.snipex.Snippet;
 
 /**

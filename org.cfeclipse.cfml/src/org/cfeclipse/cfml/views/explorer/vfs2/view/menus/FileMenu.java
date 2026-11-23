@@ -5,6 +5,13 @@ import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.FileSystemException;
+import org.cfeclipse.cfml.net.FTPConnectionProperties;
+import org.cfeclipse.cfml.preferences.FtpConnectionDialog;
+import org.cfeclipse.cfml.util.CFPluginImages;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.VFSUtil;
+import org.cfeclipse.cfml.views.explorer.vfs2.view.VFSView;
 import org.eclipse.core.runtime.IConfigurationElement;
 import org.eclipse.core.runtime.IExtension;
 import org.eclipse.core.runtime.IExtensionPoint;
@@ -18,14 +25,6 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.TreeItem;
 import org.eclipse.ui.dialogs.PreferencesUtil;
-
-import org.apache.commons.vfs2.FileObject;
-import org.apache.commons.vfs2.FileSystemException;
-import org.cfeclipse.cfml.net.FTPConnectionProperties;
-import org.cfeclipse.cfml.preferences.FtpConnectionDialog;
-import org.cfeclipse.cfml.util.CFPluginImages;
-import org.cfeclipse.cfml.views.explorer.vfs2.view.VFSUtil;
-import org.cfeclipse.cfml.views.explorer.vfs2.view.VFSView;
 
 public class FileMenu {
 

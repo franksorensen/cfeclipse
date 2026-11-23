@@ -13,49 +13,15 @@
 	<version>1.5.3</version>
 	<packaging>eclipse-plugin</packaging>
 
+	<properties>
+		<dependency.dir>${project.basedir}/lib</dependency.dir>
+	</properties>
+
 	<dependencies>
-		<dependency>
-			<groupId>net.htmlparser.jericho</groupId>
-			<artifactId>jericho-html</artifactId>
-			<version>3.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.antlr</groupId>
-			<artifactId>antlr4</artifactId>
-			<version>4.13.2</version>
-			<type>jar</type>
-		</dependency>
-		<dependency>
-		    <groupId>commons-io</groupId>
-		    <artifactId>commons-io</artifactId>
-		    <version>2.22.0</version>
-		    <scope>compile</scope>
-		</dependency>		
-		<dependency>
-		    <groupId>org.javolution</groupId>
-		    <artifactId>javolution</artifactId>
-		    <version>6.0.0</version>
-		    <type>pom</type>
-		</dependency>
-		<dependency>
-		    <groupId>org.slf4j</groupId>
-		    <artifactId>slf4j-api</artifactId>
-		    <version>2.0.20</version>
-		</dependency>
-		<dependency>
-		    <groupId>org.apache.commons</groupId>
-		    <artifactId>commons-collections4</artifactId>
-		    <version>4.6.0</version>
-		</dependency>
 		<dependency>
 		    <groupId>commons-logging</groupId>
 		    <artifactId>commons-logging</artifactId>
 		    <version>1.4.0</version>
-		</dependency>
-		<dependency>
-		    <groupId>commons-net</groupId>
-		    <artifactId>commons-net</artifactId>
-		    <version>3.13.0</version>
 		</dependency>
 		<dependency>
 		    <groupId>org.apache.commons</groupId>
@@ -69,5 +35,36 @@
 		</dependency>		
 	</dependencies>
 	
+	<build>
+		<sourceDirectory>src/</sourceDirectory>
+		<outputDirectory>bin/</outputDirectory>
+		<resources>
+			<resource>
+				<directory>src/</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>3.11.0</version>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<stripVersion>true</stripVersion>
+							<outputDirectory>${dependency.dir}</outputDirectory>
+							<includeGroupIds>commons-logging,org.apache.commons,com.github.mwiede</includeGroupIds>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 	
 </project>

@@ -21,20 +21,15 @@ import org.cfeclipse.cfml.CFMLPlugin;
 import org.cfeclipse.cfml.editors.actions.ToggleMarkOccurrencesAction;
 import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.jface.action.Separator;
-import org.eclipse.jface.text.source.ISourceViewer;
-
 import org.eclipse.ui.IActionBars;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IWorkbenchActionConstants;
 import org.eclipse.ui.IWorkbenchPage;
-
 import org.eclipse.ui.texteditor.BasicTextEditorActionContributor;
 import org.eclipse.ui.texteditor.ITextEditor;
 import org.eclipse.ui.texteditor.ITextEditorActionConstants;
 import org.eclipse.ui.texteditor.ITextEditorActionDefinitionIds;
 import org.eclipse.ui.texteditor.RetargetTextEditorAction;
-
-import org.eclipse.ui.editors.text.TextEditorActionContributor;
 
 /**
  * Contributes interesting Ant Editor actions to the desktop's Edit menu and the toolbar.

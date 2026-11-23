@@ -43,6 +43,7 @@ import org.cfeclipse.cfml.editors.actions.JumpToMatchingTagAction;
 import org.cfeclipse.cfml.editors.actions.LocateInFileSystemAction;
 import org.cfeclipse.cfml.editors.actions.RTrimAction;
 import org.cfeclipse.cfml.editors.breadcrumb.IBreadcrumb;
+import org.cfeclipse.cfml.editors.codefolding.CodeFoldingResourceChangeReporter;
 import org.cfeclipse.cfml.editors.codefolding.CodeFoldingSetter;
 import org.cfeclipse.cfml.editors.decoration.DecorationSupport;
 import org.cfeclipse.cfml.editors.dnd.CFEDragDropListener;
@@ -57,7 +58,6 @@ import org.cfeclipse.cfml.editors.ui.CFMLEditorToolbar;
 import org.cfeclipse.cfml.parser.CFDocument;
 import org.cfeclipse.cfml.parser.docitems.CfmlTagItem;
 import org.cfeclipse.cfml.parser.docitems.DocItem;
-import org.cfeclipse.cfml.preferences.CFMLPreferenceManager;
 import org.cfeclipse.cfml.preferences.EditorPreferenceConstants;
 import org.cfeclipse.cfml.preferences.ParserPreferenceConstants;
 import org.cfeclipse.cfml.preferences.TextSelectionPreferenceConstants;
@@ -121,7 +121,6 @@ import org.eclipse.ui.dialogs.SaveAsDialog;
 import org.eclipse.ui.dnd.IDragAndDropService;
 import org.eclipse.ui.editors.text.EditorsUI;
 import org.eclipse.ui.editors.text.ITextEditorHelpContextIds;
-import org.eclipse.ui.editors.text.TextEditor;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.IShowInSource;
 import org.eclipse.ui.part.ResourceTransfer;
@@ -136,7 +135,6 @@ import org.eclipse.ui.texteditor.ITextEditor;
 import org.eclipse.ui.texteditor.MarkerAnnotationPreferences;
 import org.eclipse.ui.texteditor.SourceViewerDecorationSupport;
 import org.eclipse.ui.texteditor.TextOperationAction;
-import org.cfeclipse.cfml.editors.codefolding.CodeFoldingResourceChangeReporter;
 
 /**
  * @author Rob

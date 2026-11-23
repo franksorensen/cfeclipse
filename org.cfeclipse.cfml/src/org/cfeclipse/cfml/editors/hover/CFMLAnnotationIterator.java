@@ -2,12 +2,9 @@ package org.cfeclipse.cfml.editors.hover;
 
 import java.util.Iterator;
 
-import org.eclipse.core.runtime.CoreException;
-
 import org.eclipse.core.resources.IMarker;
-
+import org.eclipse.core.runtime.CoreException;
 import org.eclipse.jface.text.source.Annotation;
-
 import org.eclipse.ui.texteditor.MarkerAnnotation;
 
 /**

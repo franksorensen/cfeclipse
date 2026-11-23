@@ -7,36 +7,20 @@
 package org.cfeclipse.cfml.net.ftp;
 
 import java.io.BufferedInputStream;
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.NoRouteToHostException;
-import java.net.URI;
-import java.net.URL;
-import java.net.URLEncoder;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Map;
 
-import org.apache.commons.vfs2.CacheStrategy;
-import org.apache.commons.vfs2.FileName;
 import org.apache.commons.vfs2.FileObject;
 import org.apache.commons.vfs2.FileSystem;
 import org.apache.commons.vfs2.FileSystemException;
 import org.apache.commons.vfs2.FileSystemManager;
 import org.apache.commons.vfs2.FileSystemOptions;
-import org.apache.commons.vfs2.FileType;
 import org.apache.commons.vfs2.VFS;
 import org.apache.commons.vfs2.auth.StaticUserAuthenticator;
 import org.apache.commons.vfs2.impl.DefaultFileSystemConfigBuilder;
 import org.apache.commons.vfs2.impl.DefaultFileSystemManager;
-import org.apache.commons.vfs2.operations.FileOperationProvider;
-import org.apache.commons.vfs2.operations.FileOperations;
-import org.apache.commons.vfs2.provider.ftp.FtpFileProvider;
 import org.apache.commons.vfs2.provider.ftp.FtpFileSystemConfigBuilder;
-import org.apache.commons.vfs2.provider.sftp.SftpFileObject;
-import org.apache.commons.vfs2.provider.sftp.SftpFileProvider;
 import org.apache.commons.vfs2.provider.sftp.SftpFileSystemConfigBuilder;
 import org.cfeclipse.cfml.net.FTPConnectionProperties;
 import org.cfeclipse.cfml.net.RemoteFile;
@@ -45,16 +29,8 @@ import org.cfeclipse.cfml.util.AlertUtils;
 import org.cfeclipse.cfml.views.explorer.FileNameFilter;
 import org.cfeclipse.cfml.views.explorer.FileSystemRoot;
 import org.cfeclipse.cfml.views.explorer.IFileProvider;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.IJobChangeEvent;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.core.runtime.jobs.JobChangeAdapter;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IViewPart;
-
-import com.jcraft.jsch.UserInfo;
 
 
 

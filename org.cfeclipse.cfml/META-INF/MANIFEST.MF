@@ -7,6 +7,14 @@ Bundle-Version: 1.5.3
 Bundle-Activator: org.cfeclipse.cfml.CFMLPlugin
 Bundle-Vendor: cfeclipse.org
 Bundle-Localization: plugin
+Bundle-ClassPath: .,
+ lib/cfml.dictionary.jar,
+ lib/cfml.dictionary.jar,
+ lib/cfml.formatting.jar,
+ lib/commons-lang3.jar,
+ lib/commons-logging.jar,
+ lib/commons-vfs2.jar,
+ lib/jsch.jar
 Export-Package: .,
  org.cfeclipse.cfml;
   uses:="cfml.parsing,
@@ -354,7 +362,8 @@ Require-Bundle: org.eclipse.ui,
  com.ibm.icu;bundle-version="[78.3.0,79.0.0)",
  org.eclipse.ui.themes,
  org.eclipse.nebula.widgets.pshelf;bundle-version="1.2.0",
- org.eclipse.nebula.widgets.gallery;bundle-version="1.1.0"
+ org.eclipse.nebula.widgets.gallery;bundle-version="1.1.0",
+ bcprov;bundle-version="[1.85.0,2.0.0)"
 Bundle-ActivationPolicy: lazy
 Import-Package: com.ibm.icu.text,
  org.eclipse.ui.console

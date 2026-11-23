@@ -3,7 +3,9 @@ package org.cfeclipse.cfml.editors.dnd.future;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 
-import org.eclipse.core.resources.*;
+import org.eclipse.core.resources.IContainer;
+import org.eclipse.core.resources.IFile;
+import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.Path;
 import org.eclipse.ui.part.IDropActionDelegate;

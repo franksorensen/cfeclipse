@@ -13,23 +13,18 @@ package org.cfeclipse.cfml.templates.editors;
 
 import java.io.IOException;
 
+import org.cfeclipse.cfml.CFMLPlugin;
 import org.cfeclipse.cfml.templates.template.CFScriptTemplateContextType;
 import org.cfeclipse.cfml.templates.template.CFTemplateContextType;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
-
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.jface.resource.ImageRegistry;
-
 import org.eclipse.jface.text.templates.ContextTypeRegistry;
 import org.eclipse.jface.text.templates.persistence.TemplateStore;
-
-import org.eclipse.ui.editors.text.templates.ContributionTemplateStore;
 import org.eclipse.ui.editors.text.templates.ContributionContextTypeRegistry;
-import org.cfeclipse.cfml.CFMContextType;
-import org.cfeclipse.cfml.CFMLPlugin;
-import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.eclipse.ui.editors.text.templates.ContributionTemplateStore;
 
 /**
  * The main plugin class to be used in the desktop.

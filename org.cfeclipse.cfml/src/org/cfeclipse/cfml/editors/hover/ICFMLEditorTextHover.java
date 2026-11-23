@@ -1,7 +1,6 @@
 package org.cfeclipse.cfml.editors.hover;
 
 import org.eclipse.jface.text.ITextHover;
-
 import org.eclipse.ui.IEditorPart;
 
 

@@ -24,8 +24,8 @@
  */
 package org.cfeclipse.cfml.editors;
 
-import org.eclipse.jface.text.TextPresentation;
 import org.eclipse.jface.text.DefaultInformationControl.IInformationPresenter;
+import org.eclipse.jface.text.TextPresentation;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyleRange;
 import org.eclipse.swt.widgets.Display;

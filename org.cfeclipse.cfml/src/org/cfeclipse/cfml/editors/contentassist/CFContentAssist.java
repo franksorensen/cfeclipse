@@ -36,7 +36,6 @@ import java.util.regex.Pattern;
 
 import org.cfeclipse.cfml.dictionary.Parameter;
 import org.cfeclipse.cfml.dictionary.Value;
-import org.cfeclipse.cfml.editors.ICFDocument;
 import org.cfeclipse.cfml.editors.ICFEFileDocument;
 import org.cfeclipse.cfml.editors.partitioner.scanners.CFPartitionScanner;
 import org.cfeclipse.cfml.util.CFDocUtils;

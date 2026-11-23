@@ -5,6 +5,7 @@
  * Window - Preferences - Java - Code Generation - Code and Comments
  */
 package org.cfeclipse.cfml.external;
+import org.cfeclipse.cfml.util.EclipseAssert;
 /*
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -47,7 +48,6 @@ import org.eclipse.core.resources.IMarker;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.cfeclipse.cfml.util.EclipseAssert;
 
 /**
  * @author Stephen Milligan

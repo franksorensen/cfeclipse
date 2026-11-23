@@ -11,6 +11,9 @@ import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.jface.dialogs.DialogPage;
 import org.eclipse.jface.text.TextSelection;
+import org.eclipse.nebula.widgets.pshelf.PShelf;
+import org.eclipse.nebula.widgets.pshelf.PShelfItem;
+import org.eclipse.nebula.widgets.pshelf.RedmondShelfRenderer;
 import org.eclipse.search.ui.ISearchPage;
 import org.eclipse.search.ui.ISearchPageContainer;
 import org.eclipse.search.ui.NewSearchUI;
@@ -22,21 +25,12 @@ import org.eclipse.swt.events.ModifyListener;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.FillLayout;
-import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
-
-import org.eclipse.nebula.widgets.pshelf.PShelf;
-import org.eclipse.nebula.widgets.pshelf.PShelfItem;
-import org.eclipse.nebula.widgets.pshelf.RedmondShelfRenderer;
 
 public class CFMLTagSearchPage extends DialogPage implements ISearchPage {
 

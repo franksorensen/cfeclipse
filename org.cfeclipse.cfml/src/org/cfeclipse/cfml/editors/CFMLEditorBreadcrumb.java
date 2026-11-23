@@ -1,9 +1,9 @@
 package org.cfeclipse.cfml.editors;
 
-import org.eclipse.swt.widgets.Composite;
 import org.cfeclipse.cfml.editors.breadcrumb.BreadcrumbViewer;
 import org.cfeclipse.cfml.editors.breadcrumb.EditorBreadcrumb;
 import org.eclipse.jface.viewers.ISelectionProvider;
+import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.actions.ActionGroup;
 import org.eclipse.ui.texteditor.ITextEditor;
 

@@ -1,12 +1,12 @@
 package org.cfeclipse.cfml.editors.hover;
 
 
-import com.ibm.icu.text.UTF16;
-
 import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.IRegion;
 import org.eclipse.jface.text.Region;
+
+import com.ibm.icu.text.UTF16;
 
 public class CFMLWordFinder {
 

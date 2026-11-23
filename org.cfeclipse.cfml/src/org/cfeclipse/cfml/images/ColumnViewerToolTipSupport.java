@@ -1,9 +1,10 @@
 package org.cfeclipse.cfml.images;
 
 import org.eclipse.jface.util.Policy;
+import org.eclipse.jface.viewers.CellLabelProvider;
 import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.swt.graphics.Image;
+import org.eclipse.jface.viewers.ViewerCell;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;

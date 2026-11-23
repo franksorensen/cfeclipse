@@ -1,20 +1,13 @@
 package org.cfeclipse.cfml.parser;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.antlr.v4.runtime.ParserRuleContext;
-import org.antlr.v4.runtime.RuleContext;
-import org.antlr.v4.runtime.tree.TerminalNode;
 import org.cfeclipse.cfml.parser.docitems.DocItem;
 import org.cfeclipse.cfml.parser.docitems.ScriptItem;
 
 import cfml.CFSCRIPTParser;
-import cfml.CFSCRIPTParserBaseListener;
 import cfml.CFSCRIPTParser.AssignmentExpressionContext;
 import cfml.CFSCRIPTParser.ComponentAttributeContext;
 import cfml.CFSCRIPTParser.ComponentDeclarationContext;
@@ -26,6 +19,7 @@ import cfml.CFSCRIPTParser.LocalAssignmentExpressionContext;
 import cfml.CFSCRIPTParser.NewComponentExpressionContext;
 import cfml.CFSCRIPTParser.PropertyStatementContext;
 import cfml.CFSCRIPTParser.SwitchStatementContext;
+import cfml.CFSCRIPTParserBaseListener;
 
 public class ParseTreeListener extends CFSCRIPTParserBaseListener {
     private final List<String> ruleNames = Arrays.asList(CFSCRIPTParser.ruleNames);

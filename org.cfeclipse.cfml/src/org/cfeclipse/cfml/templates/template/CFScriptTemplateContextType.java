@@ -10,8 +10,8 @@
  *******************************************************************************/
 package org.cfeclipse.cfml.templates.template;
 
-import org.eclipse.jface.text.templates.TemplateContextType;
 import org.eclipse.jface.text.templates.GlobalTemplateVariables;
+import org.eclipse.jface.text.templates.TemplateContextType;
 
 
 /**

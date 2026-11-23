@@ -1,20 +1,21 @@
 package org.cfeclipse.snipex;
 
-import org.cfeclipse.cfml.CFMLPlugin;
-import org.xml.sax.Attributes;
-import org.xml.sax.helpers.DefaultHandler;
 import java.io.File;
 import java.io.InputStreamReader;
-import java.util.Date;
-import java.util.Vector;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Date;
+import java.util.Vector;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
+
+import org.cfeclipse.cfml.CFMLPlugin;
+import org.xml.sax.Attributes;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
+import org.xml.sax.helpers.DefaultHandler;
 
 public class LibraryHandler extends DefaultHandler {
 	private boolean isStackReadyForText = false;

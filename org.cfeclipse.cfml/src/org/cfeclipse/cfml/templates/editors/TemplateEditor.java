@@ -11,9 +11,7 @@
 package org.cfeclipse.cfml.templates.editors;
 
 import org.eclipse.jface.action.IAction;
-
 import org.eclipse.jface.text.source.ISourceViewer;
-
 import org.eclipse.ui.texteditor.AbstractDecoratedTextEditor;
 import org.eclipse.ui.texteditor.ITextEditorActionDefinitionIds;
 import org.eclipse.ui.texteditor.TextOperationAction;

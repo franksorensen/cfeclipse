@@ -25,7 +25,6 @@
 package org.cfeclipse.cfml.editors;
 
 
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -60,11 +59,9 @@ import org.cfeclipse.cfml.preferences.CFMLPreferenceManager;
 import org.cfeclipse.cfml.preferences.EditorPreferenceConstants;
 import org.cfeclipse.cfml.preferences.HTMLColorsPreferenceConstants;
 import org.cfeclipse.cfml.preferences.ParserPreferenceConstants;
-import org.cfeclipse.cfml.util.FileLocator;
 import org.eclipse.core.resources.IMarker;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.Path;
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.jface.text.DefaultInformationControl;
@@ -107,7 +104,6 @@ import org.eclipse.ui.editors.text.TextSourceViewerConfiguration;
 import org.eclipse.ui.ide.IDE;
 import org.eclipse.ui.texteditor.AbstractDecoratedTextEditorPreferenceConstants;
 import org.eclipse.ui.texteditor.MarkerAnnotation;
-import org.osgi.framework.Bundle;
 /**
  * <p>
  * This sets up the whole editor. Assigin partition damagers and repairers, and
