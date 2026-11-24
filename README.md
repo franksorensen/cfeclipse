@@ -1,7 +1,13 @@
-CFEclipse is no longer maintained
-=================================
+Forked version of CFEclipse
+===========================
 
-CFEclipse is no longer actively maintained.  
+The original CFEclipse is no longer actively maintained. And the update site on cfeclipse.org is also gone.
+
+But not all Coldfusion sites are gone (yet) and they do occasionally need maintenance. To do this in Eclipse without the CFEplise plugin is extra painful. So the purpose of this fork is simply to make the old source code build a version of the plugin that can installed and run in recent versions of Eclipse.
+
+Forked versions of the two dependencies cfeclipse-parser and cfeclipse-cflint can also be found here.
+
+All three code projects can be run as Maven builds and they will produce local update sites as outputs.
 
 
 CFEclipse Project
